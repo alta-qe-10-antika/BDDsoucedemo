@@ -1,0 +1,230 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 13825595661,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Sauce Demo",
+        "description": "",
+        "id": "sauce-demo;sauce-demo",
+        "after": [
+          {
+            "result": {
+              "duration": 351151745,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 580875604,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User already on website sauce demo",
+            "match": {
+              "location": "LoginSteps.verifyLandingPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 729008741,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User input \"standard_user\" as userName and input \"secret_sauce\" as password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "standard_user",
+                  "offset": 12
+                },
+                {
+                  "val": "secret_sauce",
+                  "offset": 50
+                }
+              ],
+              "location": "LoginSteps.inputCredential(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 223013708,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User already on sales page",
+            "match": {
+              "location": "SalesSteps.verifySalesPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 522130126,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User sort product Name Z to A",
+            "match": {
+              "location": "SalesSteps.sorting()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 177870620,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User add item on cart",
+            "match": {
+              "location": "SalesSteps.addBarang()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 120667187,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User Click cart",
+            "match": {
+              "location": "SalesSteps.ShoppingCartContainer()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 98878091,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User Remove chart Tshirt Red",
+            "match": {
+              "location": "ChartSteps.RemoveChartTshirtRed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 119161722,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User Checkout",
+            "match": {
+              "location": "ChartSteps.Checkout()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 68760432,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User already on checkout information page",
+            "match": {
+              "location": "CheckoutSteps.verifyCheckoutPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 602971138,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User input \"antika\" as firstName and input \"sarii\" as lastName and input \"0000\" as postalCode",
+            "match": {
+              "arguments": [
+                {
+                  "val": "antika",
+                  "offset": 12
+                },
+                {
+                  "val": "sarii",
+                  "offset": 44
+                },
+                {
+                  "val": "0000",
+                  "offset": 74
+                }
+              ],
+              "location": "CheckoutSteps.inputInformation(String,String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 67458476,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User already on Checkout Overview page",
+            "match": {
+              "location": "CheckoutOverviewSteps.CheckoutOverviewPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 79463987,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User already check Total Price",
+            "match": {
+              "location": "CheckoutOverviewSteps.verifyTotalPrice()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 100408999,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User click Finish Button",
+            "match": {
+              "location": "CheckoutOverviewSteps.clickFinishButton()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Sauce Demo",
+    "description": "As a User I Want to Login to SauceDemo Website",
+    "id": "sauce-demo",
+    "keyword": "Feature",
+    "uri": "features/SauceDemo.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@SauceDemo"
+      }
+    ]
+  }
+]
